@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recorder + Uploadcare</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    UPLOADCARE_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+  </script>
+
+  <script src="https://ucarecdn.com/libs/uploadcare/4.x/uploadcare.full.min.js"></script>
+</head>
+<body>
+
+<h1>🎥 Screen Recorder</h1>
+
+<video id="preview" autoplay muted></video>
+
+<div>
+  <button onclick="startRecording()">Start</button>
+  <button onclick="stopRecording()">Stop</button>
+</div>
+
+<p id="link"></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
